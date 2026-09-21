@@ -13,3 +13,10 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+#hero{
+    text-align: center;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
