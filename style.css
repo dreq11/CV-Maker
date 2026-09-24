@@ -10,7 +10,8 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex: auto;
+    align-items: center; 
     min-height: 100vh;
 }
 
@@ -18,5 +19,5 @@ body {
     text-align: center;
     padding: 40px;
     max-width: 600px;
-    width: 100%;
+    width: 10%;
 }
