@@ -45,11 +45,36 @@ body {
 /* styling the get started button*/
 .btn-get-started {
     background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* hero section styling*/
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-#hero{
-    text-align: center;
-    padding: 40px;
-    max-width: 600px;
-    width: 100%;
+.hero-intro {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #4b5563;
+    margin: 15px;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 800px;
+    margin: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #6b7280;
 }
