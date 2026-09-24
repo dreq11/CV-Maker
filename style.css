@@ -24,6 +24,19 @@ body {
     padding: 20px 40px;
     border-bottom: 1px solid #e5e7eb;
 }
+/* 3-lines menu on left*/
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* sttylig of 3-lines*/
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 #hero{
     text-align: center;
