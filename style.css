@@ -37,6 +37,15 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
+/* brand logo styling*/
+.brand-name {
+    font-weight: 700;
+    font-size: 20px;
+}
+/* styling the get started button*/
+.btn-get-started {
+    background-color: #000000;
+}
 
 #hero{
     text-align: center;
