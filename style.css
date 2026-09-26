@@ -37,6 +37,55 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
+
+/* the slidebar container 3-lines*/
+.sidebar {
+    position: fixed;   /* fixes in place so stays on screen*/
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 40px;
+    z-index: 1000;              /* keeps it on top all elements */
+    transition: left 0.3s ease;  /* slide animation tracing to left position*/
+}
+
+/*2. the close (X) button */
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+/*3. menu links & catagories */
+.sidebar-links h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9ca3af;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.sidebar-links a {
+    display: block;             /* places each link on a brand new line (on top of each other ig)*/
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* the magic interactive trigger*/
+.sidebar.active {
+    left: 0;
+}
+
 /* brand logo styling*/
 .brand-name {
     font-weight: 700;
