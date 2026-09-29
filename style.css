@@ -59,6 +59,8 @@ body {
     z-index: 1000;              /* keeps it on top all elements */
     transition: left 0.3s ease;  /* slide animation tracing to left position*/
 }
+
+/* the magic interactive trigger*/
 .sidebar.active {
     left: 0;
     box-shadow:  4px 0 20px rgba(0, 0, 0, 0.15);;
@@ -94,11 +96,6 @@ body {
     margin-bottom: 12px;
 }
 
-/* the magic interactive trigger*/
-.sidebar.active {
-    left: 0;
-}
-
 /* brand logo styling*/
 .brand-name {
     font-weight: 700;
@@ -132,7 +129,7 @@ body {
 
 .heading {
     font-size: 48px;
-    font-weight: 800px;
+    font-weight: 800;
     margin: 20px;
 }
 
@@ -140,3 +137,15 @@ body {
     font-size: 18px;
     color: #6b7280;
 }
+
+    /* search bar */
+#search-bar {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 12px 20px;
+    border: 1px solid #e5e7eb;
+    font-size: 16px;
+     margin-top: 30px;
+}
+
