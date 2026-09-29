@@ -1,5 +1,5 @@
 // 1. grab the html element from the screen
-const sideMenu = document.getElementById("side-menu");
+const sideMenu = document.getElementById("slide-menu");
 const menuToggleBtn = document.getElementById("menu-toggle");
 const closeBtn = document.getElementById("close-btn");
 
