@@ -18,17 +18,25 @@ body {
 
 /* nav bar styling*/
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
+    gap: 15px;
     align-items: center;
     padding: 20px 40px;
     border-bottom: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    z-index: 999;
+    right: 0;
 }
 /* 3-lines menu on left*/
 .nav-left {
-    display: flex;
+    display: flex;          /* forces childrens to sit horizontaly in a row*/
     align-items: center;
-    gap: 15px;
+    flex-direction: row;
+    gap: 20px;
 }
 /* sttylig of 3-lines*/
 #menu-toggle {
@@ -45,10 +53,15 @@ body {
     left: -300px;
     width: 300px;
     height: 100vh;
+    
     background-color: #ffffff;
     padding: 40px;
     z-index: 1000;              /* keeps it on top all elements */
     transition: left 0.3s ease;  /* slide animation tracing to left position*/
+}
+.sidebar.active {
+    left: 0;
+    box-shadow:  4px 0 20px rgba(0, 0, 0, 0.15);;
 }
 
 /*2. the close (X) button */
@@ -56,9 +69,9 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
+    border: none;
     background: none;
     font-size: 28px;
-    cursor: pointer;
     color: #6b7280;
 }
 
