@@ -12,3 +12,23 @@ menuToggleBtn.addEventListener("click", function(){
 closeBtn.addEventListener("click", function(){
     sideMenu.classList.remove("active");
 });
+
+// search bar function
+const searchBar = document.getElementById("search-bar"); // 1.grabbing the seach bar and all the cards
+const cards = document.querySelectorAll(".card");
+
+//2. listen: run this everytime the user types
+searchBar.addEventListener("input", function(){
+    //what the user types in low case
+    const typed = searchBar.value.toLowerCase();
+    // 3. do chehck each card one by one 
+    cards.forEach(function(card){
+        // all the text insnide this card , in lower case
+        const cardText = card.textContent.toLowerCase();
+
+    if (cardText.includes(typed)) {
+        card.style.display = "flex"; // match --> show
+    } else {cardText.display = "none"; // mismatch --> dontshow
+    }
+    });
+});
