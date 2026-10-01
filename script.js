@@ -28,7 +28,8 @@ searchBar.addEventListener("input", function(){
 
     if (cardText.includes(typed)) {
         card.style.display = "flex"; // match --> show
-    } else {cardText.display = "none"; // mismatch --> dontshow
+    } else {
+        card.style.display = "none"; // mismatch --> dontshow
     }
     });
 });
