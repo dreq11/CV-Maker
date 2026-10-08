@@ -43,8 +43,8 @@ body {
     letter-spacing: 1px;
     color: #000;
     border-bottom: 1px solid #000;
-    padding-bottom: 0px;
-    margin-bottom: 1px;
+    padding-bottom: 3px;
+    margin-bottom: 12px;
 }
 
 .cv-section p {
