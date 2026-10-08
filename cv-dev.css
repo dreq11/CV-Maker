@@ -29,5 +29,20 @@ body {
 }
 
 .cv-header p {
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.cv-section {
+    margin-bottom: 28px;
+}
+
+.cv-section h2 {
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
 }
