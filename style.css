@@ -237,6 +237,9 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s ease;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn-select:hover {
