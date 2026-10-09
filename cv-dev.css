@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: #f3f4f6;
+    background: #f3f4f6;
     padding: 40px 20px;
 }
 
 .cv {
-    background-color: #ffffff;
+    background: #ffffff;
     max-width: 794px;
     margin: 0 auto;
     padding: 55px;
