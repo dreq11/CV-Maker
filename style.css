@@ -208,6 +208,7 @@ body {
 }
 
 .card img {
+    object-position: left;    /* centers the image in the box */
     width: 100%;
     height: 220px;
     object-fit: cover;          /* crops instead of squashing */
