@@ -77,3 +77,11 @@ body {
     font-size: 14px;
     transform: translate(-205px, -5px);
 }
+
+/*phone: stack the colum*/
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr; /* stack columns on small screens */
+        gap: 4px;
+    }
+}
