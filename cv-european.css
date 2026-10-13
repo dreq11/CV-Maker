@@ -37,35 +37,50 @@ body {
 }
 
 .cv-section h2 {
-    font-size: 14px;
-    margin-bottom: 12px;
+    font-size: 13px;
+    margin-bottom: 16px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #000;
-    border-bottom: 1px solid #000;
-    padding-bottom: 3px;
+    letter-spacing: 2px;
+    color: #4f545d;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 6px;
     margin-bottom: 12px;
 }
 
 .cv-section p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* narrow left column and wider right column */
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.left {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.right h3{
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #000;
+}
+
+.right p {
     font-size: 14px;
     line-height: 1.6;
 }
 
-.entry-top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4px;
-}
-
-.entry-top h3 {
-    font-size: 14px;
-    color: #000;
-}
-
-.entry-top span {
-    font-size: 13px;
-    color: #6b7280;
+/*phone: stack the colum*/
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr; /* stack columns on small screens */
+        gap: 4px;
+    }
 }
 
 .back-button {
