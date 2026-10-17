@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Builder</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to CV Templates</a>
+  
+    <div class="builder">
+
+        <div class="form-panel">
+            <h2>Your details</h2>
+
+            <label for="in-name">Full Name:</label>
+            <input type="text" id="in-name" placeholder="Andrew Smith" required>
+            
+            <label for="in-title">Job Title:</label>
+            <input type="text" id="in-title" placeholder="Software Engineer" required>
+
+            <label for="in-contact-info">Email:</label>
+            <input type="text" id="in-contact-info" placeholder="you@email.com" required>
+
+            <label for="in-summary">Summary:</label>
+            <textarea id="in-summary" rows="4" placeholder=" write 2-3 lines about yourself." required></textarea>
+        </div>
+
+        <main class="preview-panel" id="preview">
+            <header class="pv-header">
+                <h1 id="out-name">Your Name</h1>
+                <p id="out-title" class="job">Job Title</p>
+                <p id="out-contact-info" class="Email">Email</p>
+            </header>
+
+            <h2>Summary</h2>
+            <p id="out-summary">Your summary will appear here.</p>
+        </main>
+    </div>
+    <script src="builder.js"></script>
+</body>
+</html>
