@@ -45,3 +45,57 @@ label {
     font-size: 13px;
     font-weight: 600;
 }
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.preview-panel h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.job {
+    font-size: 16px;
+    color: #374151;
+    margin-bottom: 4px;
+}
+
+.contact {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 24px;
+}
+
+.preview-panel h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.preview-panel h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.preview-panel p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .builder {
+        grid-template-columns: 1fr;
+    }
+}
