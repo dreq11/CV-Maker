@@ -16,3 +16,15 @@ link("in-name", "out-name", "Your Name");
 link("in-title", "out-title", "Job Title");
 link("in-contact-info", "out-contact-info", "your.@email.com");
 link("in-summary", "out-summary", "your summary will appear here");
+
+const preview = document.getElementById("preview");
+const layoutSelect = document.getElementById("layout-select");
+
+layoutSelect.addEventListener("change", function () {
+
+    // remove the old layout classes
+    preview.classList.remove("layout-dev", "layout-european", "layout-gulf");
+
+    //add the one the user picked
+    preview.classList.add("layout-" + layoutSelect.value);
+});
