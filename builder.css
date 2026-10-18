@@ -99,3 +99,33 @@ input, select, textarea {
         grid-template-columns: 1fr;
     }
 }
+
+/* european: quieter headings */
+.layout-european h2 {
+    color: #6b7280;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #d1d5db;
+}
+
+/* GULf: dark band on top, bar beside headings */
+.layout-gulf .pv-header {
+    background: #111827;
+    margin: -30px -30px 24px;
+    padding: 30px;
+    border-radius: 16px 16px 0 0;
+}
+
+.layout-gulf .pv-header h1 .layout-gulf .pv-header .job {
+    color: #ffffff;
+}
+
+.layout-gulf .pv-header .contact {
+    color: #9ca3af;
+    margin-bottom: 0;
+}
+
+.layout-gulf h2 {
+    border-bottom: none;
+    border-left: 4px solid #111827;
+    padding-left: 10px;
+}
