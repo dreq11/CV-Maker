@@ -122,3 +122,8 @@ body {
         grid-template-columns: 1fr; /* stack columns on small screens */
     }
  }
+
+ 
+.embedded .back-line {
+    display: none;
+}
