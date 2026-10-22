@@ -15,3 +15,8 @@ window.addEventListener("message", function (event) {
         }
     }
 });
+
+// if this page is inside another PAGES frame , mark it
+if (window.self !== window.top) {
+    document.body.classList.add("embedded");
+}
