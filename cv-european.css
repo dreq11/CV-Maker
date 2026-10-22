@@ -92,3 +92,7 @@ body {
     font-size: 14px;
     transform: translate(-205px, -5px);
 }
+
+.embedded .back-line {
+    display: none;
+}
