@@ -1,4 +1,4 @@
-* {
+\* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,4 +84,9 @@ body {
         grid-template-columns: 1fr; /* stack columns on small screens */
         gap: 4px;
     }
+}
+
+
+.embedded .back-line {
+    display: none;
 }
