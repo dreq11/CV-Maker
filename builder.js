@@ -1,4 +1,4 @@
-    const frame = document.getElementById("cv-frame");
+\    const frame = document.getElementById("cv-frame");
     const layoutSelect = document.getElementById("layout-select");
 
     // the form boxes : "in-name" pairs with the cvs "OUT-NAME"
@@ -33,3 +33,13 @@
 
     // whenever a CV page finishes loading, send whats typed so far
     frame.addEventListener("load", sendData);
+
+    // read ?tempelate=... from the address bar
+    const params = new URLSearchParams(window.location.search);
+    const wanted = params.get("tempelate");
+
+    // only axxept names we know , otherwise start on 'dev'
+    const start = Object.keys(pages).includes(wanted) ? wanted : "dev";
+
+    layoutSelect.value = start;
+    frame.src = pages[start];
