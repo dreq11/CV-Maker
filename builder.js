@@ -1,8 +1,8 @@
-\    const frame = document.getElementById("cv-frame");
+    const frame = document.getElementById("cv-frame");
     const layoutSelect = document.getElementById("layout-select");
 
     // the form boxes : "in-name" pairs with the cvs "OUT-NAME"
-    const fieldNames = ["name", "title", "contact-info","summary"];
+    const fieldNames = ["name", "title", "email", "phone", "summary"];
 
     //which pages belongs to each layout
     const pages = {
