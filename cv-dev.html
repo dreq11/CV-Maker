@@ -12,7 +12,7 @@
 
         <header class="cv-header">
             <h1 id="out-name">ANDREW SMITH</h1>
-            <p><span id="out-title">fresh graduate</span> . <span> +92 000 00 00000</span> . <span> your@gmail.com</span></p>
+            <p><span id="out-title">fresh graduate</span> . <span id="out-number"> +92 000 00 00000</span> . <span id="out-email"> your@gmail.com</span></p>
         </header>
 
         <section class="cv-section">
@@ -23,13 +23,15 @@
          <section class="cv-section">
             <h2>Work Experience</h2>
 
+            <div id="out-jobs">
+                <!-- your two sample jobs stay here, exactly as they are now-->
             <div class="entry">
                 <div class="entry-top">
                     <h3>Software Developer, Tech Solutions Inc.</h3>
                         <span>2023 - present</span>
-                    
-                </div>
-                <p>built and maintained web applications using modern technologies. worked with developers to improve user experience</p>
+                     </div>
+                
+                 <p>built and maintained web applications using modern technologies. worked with developers to improve user experience</p>
             </div>
         
         <div class="entry">
@@ -39,6 +41,7 @@
             </div>
             <p>helped in developing and maintaining websites pages and fixed layout bugs</p>
         </div>
+            </div>
     </section>
 
     <section class="cv-section">
@@ -62,6 +65,16 @@
     </section>
 
     </main>
+
+<template id="job-template">
+    <div class="entry">
+        <div class="entry-job">
+            <h3 class="job-role"></h3>
+            <span class="job-dates"></span>
+        </div>
+        <p class="job-desc"></p>
+    </div>
+</template>
 
     <script src="cv-fill.js"></script>
 </body>
