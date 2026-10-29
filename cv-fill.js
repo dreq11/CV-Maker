@@ -20,3 +20,8 @@ window.addEventListener("message", function (event) {
 if (window.self !== window.top) {
     document.body.classList.add("embedded");
 }
+
+// remember the sample jobs, so we can bring them back if the user has none
+const jobBox = document.getElementById("out-jobs");
+const sampleJobs = jobsBox ? jobsBox.innerHTML : "";
+
